@@ -18,8 +18,6 @@ void part1() {
         int line2num1 = std::stoi(line2.substr(0, line2delimIndex));
         int line2num2 = std::stoi(line2.substr(line2delimIndex+1, line2.length()));
 
-        // std::cout << line1num1 << " " << line1num2 << " " << line2num1 << " " << line2num2 << std::endl;
-
         if (
             (line1num1 >= line2num1 && line1num2 <= line2num2) ||
             (line2num1 >= line1num1 && line2num2 <= line1num2)
@@ -44,8 +42,6 @@ void part2() {
         int line1num2 = std::stoi(line1.substr(line1delimIndex+1, line1.length()));
         int line2num1 = std::stoi(line2.substr(0, line2delimIndex));
         int line2num2 = std::stoi(line2.substr(line2delimIndex+1, line2.length()));
-
-        // std::cout << line1num1 << " " << line1num2 << " " << line2num1 << " " << line2num2 << std::endl;
 
         if (
             (line1num1 <= line2num2 && line2num1 <= line1num2)
